@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senai Solutions</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img alt="Logo Senai Solutions" src="../imagens/logo_light.png"/>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Produtos</a>
+        </nav>
+    </header>
+    
+    <!-- Banner Section -->
+    <section class="main-image">
+        <img alt="Banner Principal" src="../imagens/banner.png"/>
+    </section>
+
+    <!-- Conteúdo Adicionado -->
+    <div class="container-vantagens">
+        <div class="title-vantagens">
+            <span>Confira</span> todas as nossas vantagens
+        </div>
+        <div class="content-vantagens">
+            <div class="text-vantagens">
+                <div class="icon-vantagens">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Segurança Avançada</h3>
+                <p>
+                    Oferecemos soluções de software com múltiplos níveis de segurança, garantindo a proteção dos seus dados e operações em todos os ambientes de TI.
+                </p>
+            </div>
+            <div class="text-vantagens">
+                <div class="icon-vantagens">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Eficiência Operacional</h3>
+                <p>
+                    Nossos sistemas são desenvolvidos para aumentar a produtividade e automatizar processos complexos, economizando tempo e recursos.
+                </p>
+            </div>
+            <div class="text-vantagens">
+                <div class="icon-vantagens">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <h3>Personalização</h3>
+                <p>
+                    Adaptamos nossas soluções às necessidades específicas de cada cliente, proporcionando flexibilidade e escalabilidade conforme o seu negócio cresce.
+                </p>
+            </div>
+            <div class="text-vantagens">
+                <div class="icon-vantagens">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Suporte Dedicado</h3>
+                <p>
+                    Contamos com uma equipe especializada disponível 24/7 para garantir que sua operação nunca pare, oferecendo manutenção e suporte técnico contínuos.
+                </p>
+            </div>
+        </div>
+        <div class="image-vantagens">
+            <img alt="Imagem de um smartphone exibindo notificações de segurança e personalização" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-5qXzF6hKQjtZmzSxSGNEMHTk.png?st=2024-09-23T11%3A03%3A11Z&amp;se=2024-09-23T13%3A03%3A11Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A56%3A28Z&amp;ske=2024-09-23T23%3A56%3A28Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=BDwIbLlVkfxwHie32gBB7SjsdJ8R%2BMhv%2B1XiOF6MTmw%3D"/>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.maxHeight === '0px' || menu.style.maxHeight === '') {
+                menu.style.display = 'block';
+                menu.style.maxHeight = '300px'; // Ajuste com base no número de itens do menu
+                menu.style.opacity = '1';
+            } else {
+                menu.style.maxHeight = '0px';
+                menu.style.opacity = '0';
+                setTimeout(function() {
+                    menu.style.display = 'none';
+                }, 300); // Combine com a duração da transição
+            }
+        }
+    </script>
+
+</body>
+</html>
